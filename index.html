@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-key="hero_title">Primer Congreso de Nociones Básicas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .lang-btn{padding:0.25rem;border-radius:0.375rem;font-weight:600;line-height:1}
+    .lang-btn.active{background-color:#facc15;color:#1f2937}
+  </style>
+</head>
+<body class="scroll-smooth text-gray-800">
+  <!-- ===== Barra de navegación ===== -->
+  <nav class="fixed top-0 inset-x-0 bg-blue-700 text-white shadow-lg z-50">
+    <div class="max-w-7xl mx-auto flex items-center h-16 px-4 sm:px-6 lg:px-8">
+      <a href="#hero" class="font-bold text-xl whitespace-nowrap mr-8" data-key="hero_title">Primer Congreso de Nociones Básicas</a>
+      <ul id="nav-links" class="hidden sm:flex space-x-6 font-medium flex-1">
+        <li><a href="#about" class="hover:text-yellow-300" data-key="nav_about">Sobre el congreso</a></li>
+        <li><a href="#speakers" class="hover:text-yellow-300" data-key="nav_committee">Comité&nbsp;Organizador</a></li>
+        <li><a href="#keynote" class="hover:text-yellow-300" data-key="nav_keynote">Conferencia&nbsp;Magistral</a></li>
+        <li><a href="#schedule" class="hover:text-yellow-300" data-key="nav_schedule">Programa</a></li>
+        <li><a href="#registration" class="hover:text-yellow-300" data-key="nav_registration">Inscripción</a></li>
+        <li><a href="#location" class="hover:text-yellow-300" data-key="nav_location">Lugar</a></li>
+      </ul>
+      <div class="hidden sm:flex items-center space-x-2">
+        <button class="lang-btn active" id="btn-es" onclick="setLanguage('es')" aria-label="Español">🇪🇸</button>
+        <button class="lang-btn" id="btn-en" onclick="setLanguage('en')" aria-label="English">🇬🇧</button>
+        <button class="lang-btn" id="btn-de" onclick="setLanguage('de')" aria-label="Deutsch">🇩🇪</button>
+      </div>
+      <button class="sm:hidden ml-4" aria-label="Abrir menú" onclick="document.getElementById('nav-links').classList.toggle('hidden')">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <section id="hero" class="pt-20 h-screen flex items-center justify-center bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1503428593586-e225b39bddfe?auto=format&fit=crop&w=1600&q=80');">
+    <div class="bg-black bg-opacity-60 p-10 rounded-xl text-center text-white max-w-xl mx-4">
+      <h1 class="text-4xl sm:text-5xl font-extrabold mb-6" data-key="hero_title">Primer Congreso de Nociones Básicas</h1>
+      <p class="mb-8 text-lg sm:text-xl"><span data-key="hero_sub">Domina los fundamentos y dale impulso a tu futuro.</span><br><span data-key="hero_join">Acompáñanos del</span> <span class="font-semibold">21 – 23&nbsp;de&nbsp;octubre&nbsp;2026</span> <span data-key="hero_in">en</span> <span class="font-semibold">Santiago, Chile</span> • <span data-key="format">Formato híbrido</span></p>
+      <a href="#registration" class="inline-block bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-semibold py-3 px-8 rounded-full transition" data-key="register_now">Regístrate ahora</a>
+    </div>
+  </section>
+
+  <!-- ===== Logos universidades ===== -->
+  <section class="py-8 bg-white">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-8">
+      <img src="https://www.uamericas.cl/wp-content/uploads/2021/08/logo-horizontal.png" alt="Logo Universidad de las Américas" class="h-16 object-contain">
+      <img src="https://www.uni-bielefeld.de/universitaet/profil/vision/logo/logo_ubi_bildmarke_rgb_en.png" alt="Logo Universität Bielefeld" class="h-14 object-contain">
+    </div>
+  </section>
+
+  <!-- ===== Sobre ===== -->
+  <section id="about" class="py-20 px-6 bg-white"><div class="max-w-5xl mx-auto"><h2 class="text-3xl font-bold mb-6 text-center" data-key="about_title">¿De qué trata el congreso?</h2><p class="text-lg leading-relaxed text-justify"><strong data-key="hero_title">Primer Congreso de Nociones Básicas</strong> <span data-key="about_text">está diseñado para estudiantes, profesionales y curiosos que quieran afianzar los conceptos esenciales en diversas disciplinas.</span></p></div></section>
+
+  <!-- ===== Comité Organizador ===== -->
+  <section id="speakers" class="py-20 px-6 bg-gray-100"><div class="max-w-6xl mx-auto"><h2 class="text-3xl font-bold mb-10 text-center" data-key="committee_title">Comité&nbsp;Organizador</h2><div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3"><div class="bg-white shadow rounded-xl overflow-hidden"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80" alt="Pamela Reyes" class="w-full h-48 object-cover"><div class="p-6"><h3 class="text-xl font-semibold">Dra. Pamela Reyes Santander</h3><p class="text-sm text-blue-700 mb-2">Universidad de las Américas (Chile)</p></div></div><div class="bg-white shadow rounded-xl overflow-hidden"><img src="https://wwwhomes.uni-bielefeld.de/mkleine/bild/michael.jpg" alt="Michael Kleine" class="w-full h-48 object-cover"><div class="p-6"><h3 class="text-xl font-semibold">Prof.&nbsp;Dr.&nbsp;Michael&nbsp;Kleine</h3><p class="text-sm text-blue-700 mb-2">Universität Bielefeld (Alemania)</p></div></div><div class="bg-white shadow rounded-xl overflow-hidden"><img src="Fotografía.png" alt="Nicolás Alarcón" class="w-full h-48 object-cover"><div class="p-6"><h3 class="text-xl font-semibold">Dr.&nbsp;Nicolás&nbsp;Alarcón&nbsp;Relmucao</h3><p class="text-sm text-blue-700 mb-2">Universität Bielefeld (Alemania)</p></div></div></div></div></section>
+
+  <!-- ===== Conferencia Magistral ===== -->
+  <section id="keynote" class="py-20 px-6 bg-white"><div class="max-w-4xl mx-auto text-center"><h2 class="text-3xl font-bold mb-10" data-key="keynote_title">Conferencia&nbsp;Magistral</h2><div class="flex justify-center"><div class="bg-gray-100 shadow rounded-xl overflow-hidden max-w-sm"><img src="https://ekvv.uni-bielefeld.de/pers_publ/download/p/q/n/195799345/Original_175109.png" alt="Rudolf vom Hofe" class="w-full h-56 object-cover"><div class="p-6 text-center"><h3 class="text-xl font-semibold mb-2">Prof.&nbsp;Dr.&nbsp;Rudolf&nbsp;vom&nbsp;Hofe</h3><p class="text-sm" data-key="keynote_desc">Desarrollador de la Teoría de Nociones Básicas (<em>Grundvorstellungen</em>).</p></div></div></div></div></section>
+
+  <!-- ===== Programa ===== -->
+  <!-- (sección de programa omitida por brevedad; se mantiene igual que tu última versión) -->
+  <!-- ===== Programa ===== -->
+  <section id="schedule" class="py-20 px-6 bg-gray-100">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-center" data-key="program_title">Programa</h2>
+
+      <!-- Miércoles -->
+      <h3 class="text-2xl font-semibold mb-4" data-key="day_wed">Miércoles</h3>
+      <div class="overflow-x-auto mb-10 rounded-lg shadow">
+        <table class="min-w-full divide-y divide-gray-200">
+          <thead class="bg-blue-600 text-white">
+            <tr>
+              <th class="px-4 py-2 text-left text-xs font-semibold uppercase">Hora</th>
+              <th class="px-4 py-2 text-left text-xs font-semibold uppercase" data-key="activity_col">Actividad</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white divide-y divide-gray-200 text-sm">
+            <tr><td class="px-4 py-2">14:00 – 14:30</td><td class="px-4 py-2" data-key="wed_open">Apertura del congreso</td></tr>
+            <tr class="bg-gray-50"><td class="px-4 py-2">14:30 – 15:30</td><td class="px-4 py-2" data-key="keynote">Conferencia Magistral</td></tr>
+            <tr><td class="px-4 py-2">15:30 – 16:00</td><td class="px-4 py-2" data-key="break">Pausa</td></tr>
+            <tr class="bg-gray-50"><td class="px-4 py-2">16:00 – 17:00</td><td class="px-4 py-2" data-key="workshops">Workshops</td></tr>
+            <tr><td class="px-4 py-2">17:00 – 17:30</td><td class="px-4 py-2" data-key="posters">Poster sesión</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Jueves -->
+      <h3 class="text-2xl font-semibold mb-4" data-key="day_thu">Jueves</h3>
+      <div class="overflow-x-auto mb-10 rounded-lg shadow">
+        <table class="min-w-full divide-y divide-gray-200">
+          <thead class="bg-blue-600 text-white"><tr><th class="px-4 py-2 text-left text-xs font-semibold uppercase">Hora</th><th class="px-4 py-2 text-left text-xs font-semibold uppercase" data-key="activity_col">Actividad</th></tr></thead>
+          <tbody class="bg-white divide-y divide-gray-200 text-sm">
+            <tr><td class="px-4 py-2">09:00 – 10:00</td><td class="px-4 py-2" data-key="keynote">Conferencia Magistral</td></tr>
+            <tr class="bg-gray-50"><td class="px-4 py-2">10:00 – 10:15</td><td class="px-4 py-2" data-key="break">Pausa</td></tr>
+            <tr><td class="px-4 py-2">10:15 – 11:15</td><td class="px-4 py-2" data-key="workshops">Workshops</td></tr>
+            <tr class="bg-gray-50"><td class="px-4 py-2">11:15 – 11:45</td><td class="px-4 py-2" data-key="break">Pausa</td></tr>
+            <tr><td class="px-4 py-2">11:45 – 12:30</td><td class="px-4 py-2" data-key="presentations">Presentaciones</td></tr>
+            <tr class="bg-gray-50"><td class="px-4 py-2">12:30 – 14:00</td><td class="px-4 py-2" data-key="lunch">Almuerzo</td></tr>
+            <tr><td class="px-4 py-2">14:00 – 15:00</td><td class="px-4 py-2" data-key="keynote">Conferencia Magistral</td></tr>
+            <tr class="bg-gray-50"><td class="px-4 py-2">15:00 – 15:15</td><td class="px-4 py-2" data-key="break">Pausa</td></tr>
+            <tr><td class="px-4 py-2">15:15 – 16:15</td><td class="px-4 py-2" data-key="workshops">Workshops</td></tr>
+            <tr class="bg-gray-50"><td class="px-4 py-2">16:15 – 16:45</td><td class="px-4 py-2" data-key="break">Pausa</td></tr>
+            <tr><td class="px-4 py-2">16:45 – 17:30</td><td class="px-4 py-2" data-key="presentations">Presentaciones</td></tr>
+            <tr class="bg-gray-50"><td class="px-4 py-2">19:00</td><td class="px-4 py-2" data-key="dinner">Cena</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Viernes -->
+      <h3 class="text-2xl font-semibold mb-4" data-key="day_fri">Viernes</h3>
+      <div class="overflow-x-auto rounded-lg shadow">
+        <table class="min-w-full divide-y divide-gray-200">
+          <thead class="bg-blue-600 text-white"><tr><th class="px-4 py-2 text-left text-xs font-semibold uppercase">Hora</th><th class="px-4 py-2 text-left text-xs font-semibold uppercase" data-key="activity_col">Actividad</th></tr></thead>
+          <tbody class="bg-white divide-y divide-gray-200 text-sm">
+            <tr><td class="px-4 py-2">09:00 – 09:45</td><td class="px-4 py-2" data-key="presentations">Presentaciones</td></tr>
+            <tr class="bg-gray-50"><td class="px-4 py-2">09:45 – 10:15</td><td class="px-4 py-2" data-key="break">Pausa</td></tr>
+            <tr><td class="px-4 py-2">10:15 – 11:15</td><td class="px-4 py-2" data-key="keynote">Conferencia Magistral</td></tr>
+            <tr class="bg-gray-50"><td class="px-4 py-2">11:15 – 11:45</td><td class="px-4 py-2" data-key="workshop_keynote">Workshop de la conferencia</td></tr>
+            <tr><td class="px-4 py-2">11:45 – 12:30</td><td class="px-4 py-2" data-key="closing">Cierre del congreso</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="bg-blue-700 text-white py-6 text-center">
+    © <span id="year"></span> <span data-key="hero_title">Primer Congreso de Nociones Básicas</span>.
+  </footer>
+
+  <!-- ===== Scripts ===== -->
+  <script>
+    // Diccionario de traducciones completo
+    const translations={
+      en:{hero_title:"First Basic Notions Conference",nav_about:"About",nav_committee:"Organizing Committee",nav_keynote:"Keynote",nav_schedule:"Schedule",nav_registration:"Registration",nav_location:"Venue",hero_sub:"Master the fundamentals and boost your future.",hero_join:"Join us on",hero_in:"in",register_now:"Register now",about_title:"What is the conference about?",about_text:"is designed for students, professionals and enthusiasts who want to strengthen essential concepts across disciplines.",committee_title:"Organizing Committee",keynote_title:"Keynote Lecture",keynote_desc:"Developer of the Theory of Basic Notions (Grundvorstellungen).",program_title:"Programme",day_wed:"Wednesday",day_thu:"Thursday",day_fri:"Friday",activity_col:"Activity",wed_open:"Conference opening",keynote:"Keynote lecture",break:"Break",workshops:"Workshops",posters:"Poster session",presentations:"Presentations",lunch:"Lunch",dinner:"Dinner",workshop_keynote:"Keynote workshop",closing:"Closing ceremony"},
+      de:{hero_title:"1. Kongress Grundvorstellungen",nav_about:"Über den Kongress",nav_committee:"Organisationskomitee",nav_keynote:"Hauptvortrag",nav_schedule:"Programm",nav_registration:"Anmeldung",nav_location:"Ort",hero_sub:"Beherrsche die Grundlagen und bringe deine Zukunft voran.",hero_join:"Begleite uns am",hero_in:"in",register_now:"Jetzt anmelden",about_title:"Worum geht es?",about_text:"richtet sich an Studierende, Fachleute und Interessierte, die grundlegende Konzepte festigen möchten.",committee_title:"Organisationskomitee",keynote_title:"Hauptvortrag",keynote_desc:"Entwickler der Theorie der Grundvorstellungen.",program_title:"Programm",day_wed:"Mittwoch",day_thu:"Donnerstag",day_fri:"Freitag",activity_col:"Aktivität",wed_open:"Eröffnung",keynote:"Hauptvortrag",break:"Pause",workshops:"Workshops",posters:"Poster-Session",presentations:"Präsentationen",lunch:"Mittagessen",dinner:"Abendessen",workshop_keynote:"Workshop zum Hauptvortrag",closing:"Abschlusszeremonie"}
+    };
+
+    function setLanguage(lang){
+      document.documentElement.lang=lang;
+      document.querySelectorAll('[data-key]').forEach(el=>{
+        const key=el.getAttribute('data-key');
+        if(translations[lang] && translations[lang][key]){
+          el.textContent=translations[lang][key];
+        }
+      });
+      ['es','en','de'].forEach(code=>document.getElementById('btn-'+code).classList.toggle('active',code===lang));
+    }
+
+    // Año automático en footer
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
