@@ -126,6 +126,33 @@
     </div>
   </section>
 
+ <!-- ===== Inscripción ===== -->
+  <section id="registration" class="py-20 px-6 bg-gray-50">
+    <div class="max-w-lg mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6" data-key="registration_title">Inscripción</h2>
+      <p class="mb-6" data-key="registration_info">Completa el formulario y nos pondremos en contacto contigo con más detalles.</p>
+      <form class="space-y-6" id="regForm">
+        <input type="text" name="Nombre" placeholder="Nombre completo" required class="w-full px-4 py-3 border rounded-lg">
+        <input type="email" name="Email" placeholder="Correo electrónico" required class="w-full px-4 py-3 border rounded-lg">
+        <textarea name="Mensaje" rows="3" placeholder="Comentario opcional" class="w-full px-4 py-3 border rounded-lg"></textarea>
+        <button type="submit" class="w-full bg-blue-700 hover:bg-blue-600 text-white font-semibold py-3 rounded-lg transition" data-key="send">Enviar</button>
+      </form>
+      <p id="regSuccess" class="hidden mt-4 text-green-700 font-medium" data-key="success_msg">¡Gracias! Hemos recibido tu inscripción.</p>
+      <p id="regError" class="hidden mt-4 text-red-700 font-medium" data-key="error_msg">Lo sentimos, no se pudo enviar tu inscripción.</p>
+    </div>
+  </section>
+
+ <!-- ===== Lugar ===== -->
+  <section id="location" class="py-20 px-6 bg-white">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6" data-key="location_title">¿Dónde nos reunimos?</h2>
+      <p class="mb-6 font-medium">Facultad de Educación de la Universidad de las Américas — Av. República 71, Santiago, Chile.</p>
+      <div class="relative pb-[56.25%] h-0 overflow-hidden rounded-xl shadow-lg">
+        <iframe class="absolute top-0 left-0 w-full h-full" src="https://maps.google.com/maps?q=Av.%20Republica%2071%20Santiago%20Chile&t=&z=17&ie=UTF8&iwloc=&output=embed" loading="lazy" title="Mapa ubicación"></iframe>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== Footer ===== -->
   <footer class="bg-blue-700 text-white py-6 text-center">
     © <span id="year"></span> <span data-key="hero_title">Primer Congreso de Nociones Básicas</span>.
